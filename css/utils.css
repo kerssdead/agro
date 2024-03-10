@@ -42,7 +42,7 @@ h1 {
 }
 
 .rounded {
-    border-radius: .5em;
+    border-radius: 1em;
 }
 
 .bordered {
@@ -120,4 +120,21 @@ h1 {
 
 .padding-4 {
     padding: 4em;
+}
+
+.bg-yellow {
+    background-color: #ffe600;
+}
+
+.shadowed {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
