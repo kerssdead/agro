@@ -66,6 +66,8 @@
     font-size: 214px0px;
     font-size: 16px;
     background-color: #fff;
+
+    user-select: none;
 }
 
 .btn:hover {
@@ -82,7 +84,6 @@ textarea {
 }
 
 .body {
-    /* background-color: #fff; */
     margin: 1em 0;
     z-index: 10;
     position: relative;
@@ -100,7 +101,7 @@ textarea {
 .footer {
     height: fit-content;
     
-    background-color: #352F2A;
+    background: linear-gradient(0deg, rgba(53,47,42,1) 0%, rgba(53,47,42,0.98) 100%);
 
     position: sticky;
     top: 100%;
@@ -166,6 +167,8 @@ textarea {
 .carousel-content {
     height: fit-content;
     position: relative;
+    flex-shrink: 0;
+    width: 1350px;
 }
 
 .carousel-content > img.image {

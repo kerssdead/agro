@@ -4,8 +4,8 @@
         <link type="text/css" rel="stylesheet" href="/css/utils.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-        <script type="text/js" src="/js/scripts.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="/js/scripts.js"></script>
     </head>
 
     <body>
@@ -51,27 +51,57 @@
             <div class="body d-flex-column">
                 <div id="content-info" class="height-full">
                     <div class="carousel">
-                        <a class="prev btn">
+                        <a class="prev btn" id="carousel-prev">
                             <span class="material-symbols-outlined">
                                 chevron_left
                             </span>
                         </a>
 
-                        <div class="carousel-content">
-                            <img src="/resources/images/carousel-1.jpg" class="image">
-
-                            <div class="text">
-                                <h1>
-                                    Нижегородский Кремль
-                                </h1>
-                                
-                                <span class="descriptio">
-                                    Крепость в историческом центре Нижнего Новгорода и его древнейшая часть, главный общественно-политический и историко-художественный комплекс города
-                                </span>
+                        <div class="d-flex overflow-x-hidden" id="carousel-container">
+                            <div class="carousel-content show" name="carousel-item">
+                                <img src="/resources/images/carousel-1.jpg" class="image">
+    
+                                <div class="text">
+                                    <h1>
+                                        Нижегородский Кремль
+                                    </h1>
+                                    
+                                    <span class="description">
+                                        Крепость в историческом центре Нижнего Новгорода и его древнейшая часть, главный общественно-политический и историко-художественный комплекс города
+                                    </span>
+                                </div>
+                            </div>
+        
+                            <div class="carousel-content" name="carousel-item">
+                                <img src="/resources/images/carousel-1.jpg" class="image">
+    
+                                <div class="text">
+                                    <h1>
+                                        Нижегородский Кремль
+                                    </h1>
+                                    
+                                    <span class="description">
+                                        Крепость в историческом центре Нижнего Новгорода и его древнейшая часть, главный общественно-политический и историко-художественный комплекс города
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="carousel-content" name="carousel-item">
+                                <img src="/resources/images/carousel-1.jpg" class="image">
+    
+                                <div class="text">
+                                    <h1>
+                                        Нижегородский Кремль
+                                    </h1>
+                                    
+                                    <span class="description">
+                                        Крепость в историческом центре Нижнего Новгорода и его древнейшая часть, главный общественно-политический и историко-художественный комплекс города
+                                    </span>
+                                </div>
                             </div>
                         </div>
-    
-                        <a class="next btn">
+
+                        <a class="next btn" id="carousel-next">
                             <span class="material-symbols-outlined">
                                 chevron_right
                             </span>
@@ -171,7 +201,157 @@
                                 </button>
                         </div>
 
-                        <div class="d-flex gap-1 padding-05 justify-content-center">
+                        <div class="d-flex gap-1 padding-05 overflow-x-hidden" id="products">
+                            <div class="product">
+                                <span>
+                                    ЕС Ароматик СУ
+                                </span>
+
+                                <div class="position-relative margin-b-1">
+                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                        <span class="bg-yellow rounded padding-x-05">
+                                            Подсолнечник
+                                        </span>
+                                    </div>
+
+                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
+
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">
+                                            shopping_cart
+                                        </span>
+
+                                        <span>
+                                            В корзину
+                                        </span>
+                                    </button>
+                                </div>
+                                
+                                <span class="text-align-justify">
+                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                </span>
+                            </div>
+
+                            <div class="product">
+                                <span>
+                                    ЕС Ароматик СУ
+                                </span>
+
+                                <div class="position-relative margin-b-1">
+                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                        <span class="bg-yellow rounded padding-x-05">
+                                            Подсолнечник
+                                        </span>
+                                    </div>
+
+                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
+
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">
+                                            shopping_cart
+                                        </span>
+
+                                        <span>
+                                            В корзину
+                                        </span>
+                                    </button>
+                                </div>
+                                
+                                <span class="text-align-justify">
+                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                </span>
+                            </div>
+
+                            <div class="product">
+                                <span>
+                                    ЕС Ароматик СУ
+                                </span>
+
+                                <div class="position-relative margin-b-1">
+                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                        <span class="bg-yellow rounded padding-x-05">
+                                            Подсолнечник
+                                        </span>
+                                    </div>
+
+                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
+
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">
+                                            shopping_cart
+                                        </span>
+
+                                        <span>
+                                            В корзину
+                                        </span>
+                                    </button>
+                                </div>
+                                
+                                <span class="text-align-justify">
+                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                </span>
+                            </div>
+
+                            <div class="product">
+                                <span>
+                                    ЕС Ароматик СУ
+                                </span>
+
+                                <div class="position-relative margin-b-1">
+                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                        <span class="bg-yellow rounded padding-x-05">
+                                            Подсолнечник
+                                        </span>
+                                    </div>
+
+                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
+
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">
+                                            shopping_cart
+                                        </span>
+
+                                        <span>
+                                            В корзину
+                                        </span>
+                                    </button>
+                                </div>
+                                
+                                <span class="text-align-justify">
+                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                </span>
+                            </div>
+
+                            <div class="product">
+                                <span>
+                                    ЕС Ароматик СУ
+                                </span>
+
+                                <div class="position-relative margin-b-1">
+                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                        <span class="bg-yellow rounded padding-x-05">
+                                            Подсолнечник
+                                        </span>
+                                    </div>
+
+                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
+
+                                    <button class="btn">
+                                        <span class="material-symbols-outlined">
+                                            shopping_cart
+                                        </span>
+
+                                        <span>
+                                            В корзину
+                                        </span>
+                                    </button>
+                                </div>
+                                
+                                <span class="text-align-justify">
+                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                </span>
+                            </div>
+
                             <div class="product">
                                 <span>
                                     ЕС Ароматик СУ
@@ -295,13 +475,13 @@
 
                         <div class="padding-05">
                             <div class="d-flex gap-05 margin-l-auto width-fit">
-                                <button class="btn">
+                                <button class="btn" id="products-left">
                                     <span class="material-symbols-outlined">
                                         chevron_left
                                     </span>
                                 </button>
 
-                                <button class="btn">
+                                <button class="btn" id="products-right">
                                     <span class="material-symbols-outlined">
                                         chevron_right
                                     </span>
