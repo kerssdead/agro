@@ -101,3 +101,23 @@ h1 {
 .text-align-justify {
     text-align: justify;
 }
+
+.align-items-center {
+    align-items: center;
+}
+
+.width-half {
+    width: 50%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.padding-4 {
+    padding: 4em;
+}

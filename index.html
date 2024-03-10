@@ -3,48 +3,160 @@
         <link type="text/css" rel="stylesheet" href="/css/styles.css">
         <link type="text/css" rel="stylesheet" href="/css/utils.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
         <script type="text/js" src="/js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div class="video-container">
-            <div></div>
-            <video src="/resources/harvester.mp4" autoplay loop></video>
-        </div>
-        
         <div class="content">
-            <div class="header padding-1 d-flex justify-content-between">
+            <div class="header">
                 <div class="d-flex gap-05">
-                    <button>Главная</button>
-                    <button>Продукция</button>
-                    <button>О нас</button>
+                    <a href="#content-info" class="btn">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                    
+                        <span>
+                            Главная
+                        </span>
+                    </a>
+
+                    <a href="#content-products" class="btn">
+                        Продукция
+                    </a>
+
+                    <a href="#content-about" class="btn">
+                        О нас
+                    </a>
                 </div>
 
                 <div class="d-flex gap-05">
-                    <button>Связаться</button>
-                    <button>Корзина</button>
+                    <a href="#contacts" class="btn">
+                        Контакты
+                    </a>
+
+                    <a class="btn">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        
+                        <span>
+                            Корзина
+                        </span>                        
+                    </a>
                 </div>
             </div>
 
             <div class="body d-flex-column">
-                <div>
-                    Info
+                <div id="content-info" class="height-full">
+                    <div class="carousel">
+                        <a class="prev btn">
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+                        </a>
+
+                        <div class="carousel-content">
+                            <img src="/resources/images/carousel-1.jpg" class="image">
+
+                            <div class="text">
+                                <h1>
+                                    Заголовок
+                                </h1>
+                                
+                                <span class="description">
+                                    Описание
+                                </span>
+                            </div>
+                        </div>
+    
+                        <a class="next btn">
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="d-flex-column gap-1 padding-1">
-                    <h1>Продукция</h1>
+                <div id="content-partners" class="d-flex-column gap-1 padding-1">
+                    <h1>
+                        Наши партнёры
+                    </h1>
+
+                    <div class="partners-list">
+                        <a href="https://www.apple.com" class="partner">
+                            <img src="/resources/images/apple.svg">
+
+                            <span>
+                                Apple
+                            </span>
+                        </a>
+
+                        <a href="https://www.hp.com" class="partner">
+                            <img src="/resources/images/hp.svg">
+
+                            <span>
+                                HP
+                            </span>
+                        </a>
+
+                        <a href="https://www.dell.com" class="partner">
+                            <img src="/resources/images/dell.svg">
+
+                            <span>
+                                Dell
+                            </span>
+                        </a>
+
+                        <a href="https://www.apple.com" class="partner">
+                            <img src="/resources/images/apple.svg">
+
+                            <span>
+                                Apple
+                            </span>
+                        </a>
+
+                        <a href="https://www.hp.com" class="partner">
+                            <img src="/resources/images/hp.svg">
+
+                            <span>
+                                HP
+                            </span>
+                        </a>
+
+                        <a href="https://www.dell.com" class="partner">
+                            <img src="/resources/images/dell.svg">
+
+                            <span>
+                                Dell
+                            </span>
+                        </a>
+
+                        <a href="https://www.apple.com" class="partner">
+                            <img src="/resources/images/apple.svg">
+
+                            <span>
+                                Apple
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content-products" class="d-flex-column gap-1 padding-1">
+                    <h1>
+                        Продукция
+                    </h1>
 
                     <div class="d-flex-column">
-                        <div class="d-flex justify-content-between padding-05">
-                            <div class="d-flex gap-05">
-                                <button>Filter</button>
-                                <button>Filter</button>
-                                <button>Filter</button>
-                                <button>Filter</button>
-                            </div>
+                        <div class="d-flex gap-05 padding-05">
+                                <button class="btn">
+                                    Сортировка
+                                </button>
 
-                            <button>Очистить</button>
+                                <button class="btn">
+                                    Тип
+                                </button>
                         </div>
 
                         <div class="d-flex gap-1 padding-05">
@@ -127,39 +239,211 @@
 
                         <div class="padding-05">
                             <div class="d-flex gap-05 margin-l-auto width-fit">
-                                <button>left</button>
-                                <button>right</button>
-                                <button>Не нашли что искали?</button>
+                                <button class="btn">
+                                    <span class="material-symbols-outlined">
+                                        chevron_left
+                                    </span>
+                                </button>
+
+                                <button class="btn">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>
+                                </button>
+
+                                <button class="btn">
+                                    Показать всё
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div>
-                    About
+                <div id="content-contact" class="d-flex-column gap-1 padding-1">
+                    <h1>
+                        Свяжитесь с нами
+                    </h1>
+
+                    <div class="d-flex-column gap-1">
+                        <span>
+                            Позвоните по номеру +7 (000) 000-00-00 или напишите на почту mail@mail.com
+                        </span>
+
+                        <span>
+                            Или оставьте свои контакты и мы с Вами свяжемся.
+                        </span>
+
+                        <div class="width-15 d-flex-column gap-1 padding-1">
+                            <div>
+                                <label>
+                                    Как к вам обращаться?
+                                </label>
+
+                                <input type="text"/>
+                            </div>
+
+                            <div>
+                                <label>
+                                    Как с вами связаться?
+                                </label>
+
+                                <input type="text"/>
+                            </div>
+
+                            <div>
+                                <label>
+                                    Дополнительная информация
+                                </label>
+
+                                <input type="text"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    Contact
+                <div id="content-about" class="d-flex-column gap-1 padding-1">
+                    <h1>
+                        О нас
+                    </h1>
+
+                    <div class="d-flex gap-1 about">
+                        <div class="d-flex-column width-half gap-1">
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tellus tristique, tristique nisi et, efficitur nunc. Curabitur a ante non elit auctor bibendum. Mauris nec lacinia orci. Nam ac blandit lectus, at mattis metus. Cras efficitur placerat lorem sit amet pretium. In blandit, ligula eget dignissim commodo, odio lectus porttitor nibh, ut rhoncus sapien nisl sed tortor. Quisque mollis eleifend justo, vel condimentum ipsum pulvinar a. Nullam condimentum venenatis erat eget egestas.
+                            </span>
+
+                            <span>
+                                Адрес:
+                            </span>
+                        </div>
+
+                        <div class="d-flex-column width-half gap-1">
+                            <img class="image" src="" alt="photo">
+
+                            <img class="map" src="" alt="map">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-peoples" class="d-flex-column gap-1 padding-1">
+                    <h1>
+                        Люди
+                    </h1>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="people">
+                            <img src="" alt="people"/>
+
+                            <span>
+                                Имя
+                            </span>
+
+                            <span>
+                                Должность
+                            </span>
+
+                            <span>
+                                Номер телефона
+                            </span>
+
+                            <span>
+                                Электронная почта
+                            </span>
+                        </div>
+
+                        <div class="people">
+                            <img src="" alt="people"/>
+
+                            <span>
+                                Имя
+                            </span>
+
+                            <span>
+                                Должность
+                            </span>
+
+                            <span>
+                                Номер телефона
+                            </span>
+
+                            <span>
+                                Электронная почта
+                            </span>
+                        </div>
+
+                        <div class="people">
+                            <img src="" alt="people"/>
+
+                            <span>
+                                Имя
+                            </span>
+
+                            <span>
+                                Должность
+                            </span>
+
+                            <span>
+                                Номер телефона
+                            </span>
+
+                            <span>
+                                Электронная почта
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer d-flex-column">
-                <span>
-                    Российская Федерация, Ростовская область, город Таганрог, улица Фрунзе, дом 41
-                </span>
+            <div class="footer" id="contacts">
+                <div class="d-flex-column gap-1">
+                    <span>Навигация по сайту</span>
+
+                    <a href="#content-info">
+                        Главная
+                    </a>
+
+                    <a href="#content-partners">
+                        Наши партнёры
+                    </a>
+
+                    <a href="#content-products">
+                        Продукция
+                    </a>
+
+                    <a href="#content-contact">
+                        Связаться
+                    </a>
+
+                    <a href="#content-about">
+                        О нас
+                    </a>
+
+                    <a href="#content-peoples">
+                        Люди
+                    </a>
+
+                    <a href="#cart">
+                        Корзина
+                    </a>
+                </div>
                 
-                <span>
-                    +7 (999) 999-99-99
-                </span>
-
-                <span>
-                    mail@mail.com
-                </span>
-
-                <span>
-                    OOO "OOO"
-                </span>
+                <div class="d-flex-column gap-1">
+                    <span>
+                        Российская Федерация, Ростовская область, город Таганрог, улица Фрунзе, дом 41
+                    </span>
+                    
+                    <span>
+                        +7 (999) 999-99-99
+                    </span>
+    
+                    <span>
+                        mail@mail.com
+                    </span>
+    
+                    <span>
+                        OOO "OOO"
+                    </span>
+                </div>
             </div>
         </div>
     </body>

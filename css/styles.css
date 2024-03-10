@@ -8,68 +8,260 @@
 }
 
 .content {
-    width: 1360px;
     height: 100%;
-    background-color: #38612ad3;
     margin: auto;
     position: relative;
     z-index: 20;
 }
 
-.video-container {
-    position: absolute;
-    width: 100%;
+.header,
+.body,
+.footer {
+    padding: 0 17.5em;
 }
 
-.video-container > div {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-    z-index: 10;
-
-    background-color: black;
-    opacity: .7;
-}
-
-.video-container > video {
-    width: 100%;
-}
-
-/* #region Header */
 .header {
-    background-color: #BA9C70;
+    background-color: #fff;
+    /* position: absolute; */
+    z-index: 30;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: calc(100% - 35em);
 }
 
-.header button {
-    padding: 8px;
+.header > * {
+    margin: 1em;
+}
+
+.btn {
+    padding: .5em 1.5em;
     border-radius: 8px;
     background-color: transparent;
     border: 0;
 
+    font-weight: 600;
+    border: 1px solid rgb(233, 233, 233);
+
+    cursor: pointer;
+
     transition: all ease-in-out .25s;
+    display: flex;
+    gap: .5em;
+
+    align-items: center;
+
+    color: rgb(41, 41, 41);
+
+    font-size: 214px0px;
+    font-size: 16px;
 }
 
-.header button:hover {
-    background-color: green;
+.btn:hover {
+    background-color: #4E8253;
+    color: #fff;
 }
-/* #endregion */
 
-/* #region Body */
+input[type=text] {
+    padding: .5em 1.5em;
+    border-radius: 1em;
+    border: 1px solid rgb(233, 233, 233);
+}
+
 .body {
-    width: 100%;
     background-color: #fff;
+    margin: 1em 0;
 }
-/* #endregion */
 
-/* #region Footer */
+.body > * {
+    border-radius: 1em;
+}
+
+.body > :nth-child(even) {
+    background-color: rgb(240, 240, 240);
+}
+
+
 .footer {
-    width: 100%;
-    height: 200px;
+    height: fit-content;
     
     background-color: #433126;
 
     position: sticky;
     top: 100%;
+
+    display: flex;
+    color: #fff;
 }
-/* #endregion */
+
+.footer > * {
+    margin: 4em;
+
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel {
+    position: relative;
+}
+
+.carousel .btn {
+    position: absolute;
+    z-index: 15;
+    width: 2em;
+    height: 10em;
+    top: calc(50% - 6em);
+    padding: 0;
+}
+
+.carousel .btn > * {
+    position: absolute;
+    left: 6px;
+}
+
+.carousel .btn.prev {
+    left: 1em;
+}
+
+.carousel .btn.next {
+    right: 1em;
+}
+
+.carousel-content {
+    height: fit-content;
+    position: relative;
+}
+
+.carousel-content > img.image {
+    z-index: 10;
+    width: calc(100% - 8em);
+    left: 4em;
+    top: 3em;
+
+    margin: 1em 4em;
+    border-radius: 1em;
+}
+
+.carousel-content > .text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 12em);
+    height: 8em;
+    z-index: 15;
+    left: 4em;
+    bottom: 1em;
+    padding: 2em;
+    gap: .5em;
+
+    color: #fff;
+}
+
+.carousel-content > .text::before {
+    background: linear-gradient(0deg, rgba(20, 20, 20, .5) 80%, rgba(255, 255, 255, 0) 100%);
+
+    border-radius: 0 0 1em 1em;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 15;
+}
+
+.carousel-content > .text > .description {
+    font-size: 20px;
+}
+
+.carousel-content > .text > h1,
+.carousel-content > .text > .description {
+    z-index: 20;
+}
+
+
+
+
+
+
+
+
+
+.partners-list {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+
+.partner {
+    width: 136px;
+    padding: 1em;
+    opacity: .5;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+
+.partner:hover {
+    opacity: .8;
+}
+
+.partner > img {
+    height: 88px;
+}
+
+
+
+.about .image,
+.about .map {
+    width: 552px;
+    height: 272px;
+}
+
+
+
+.people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: .5em;
+}
+
+.people > img {
+    width: 240px;
+    height: 240px;
+    margin-bottom: .5em;
+}
+
+
+
+
+
+.material-symbols-outlined {
+    font-size: 20px !important;
+}
