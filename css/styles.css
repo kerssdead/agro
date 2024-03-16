@@ -93,7 +93,7 @@ textarea {
     border-radius: 1em;
 }
 
-.body > :nth-child(even) {
+.body > .section:nth-child(even) {
     background-color: rgb(240, 240, 240);
 }
 
@@ -335,4 +335,27 @@ textarea {
     position: absolute;
     left: 3em;
     bottom: -1.5em;
+}
+
+.product .btn.btn-danger {
+    position: inherit;
+}
+
+
+
+
+
+
+
+
+/* Cart */
+.summary {
+    padding: 1em;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 30em;
+    height: fit-content;
 }

@@ -1,11 +1,11 @@
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="/css/styles.css">
-        <link type="text/css" rel="stylesheet" href="/css/utils.css">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/css" rel="stylesheet" href="css/utils.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-        <script src="/js/scripts.js"></script>
+        <script src="js/scripts.js"></script>
     </head>
 
     <body>
@@ -36,7 +36,7 @@
                         Контакты
                     </a>
 
-                    <a class="btn">
+                    <a class="btn" href="cart.html">
                         <span class="material-symbols-outlined">
                             shopping_cart
                         </span>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="body d-flex-column">
-                <div id="content-info" class="height-full">
+                <div id="content-info" class="height-full section">
                     <div class="carousel">
                         <a class="prev btn" id="carousel-prev">
                             <span class="material-symbols-outlined">
@@ -59,7 +59,7 @@
 
                         <div class="d-flex overflow-x-hidden" id="carousel-container">
                             <div class="carousel-content show" name="carousel-item">
-                                <img src="/resources/images/carousel-1.jpg" class="image">
+                                <img src="resources/images/carousel-1.jpg" class="image">
     
                                 <div class="text">
                                     <h1>
@@ -73,7 +73,7 @@
                             </div>
         
                             <div class="carousel-content" name="carousel-item">
-                                <img src="/resources/images/carousel-1.jpg" class="image">
+                                <img src="resources/images/carousel-1.jpg" class="image">
     
                                 <div class="text">
                                     <h1>
@@ -87,7 +87,7 @@
                             </div>
     
                             <div class="carousel-content" name="carousel-item">
-                                <img src="/resources/images/carousel-1.jpg" class="image">
+                                <img src="resources/images/carousel-1.jpg" class="image">
     
                                 <div class="text">
                                     <h1>
@@ -109,14 +109,14 @@
                     </div>
                 </div>
 
-                <div id="content-partners" class="d-flex-column gap-1 padding-1">
+                <div id="content-partners" class="d-flex-column gap-1 padding-1 section">
                     <h1>
                         Наши партнёры
                     </h1>
 
                     <div class="partners-list">
                         <a href="https://www.apple.com" class="partner">
-                            <img src="/resources/images/apple.svg">
+                            <img src="resources/images/apple.svg">
 
                             <span>
                                 Apple
@@ -124,7 +124,7 @@
                         </a>
 
                         <a href="https://www.hp.com" class="partner">
-                            <img src="/resources/images/hp.svg">
+                            <img src="resources/images/hp.svg">
 
                             <span>
                                 HP
@@ -132,7 +132,7 @@
                         </a>
 
                         <a href="https://www.dell.com" class="partner">
-                            <img src="/resources/images/dell.svg">
+                            <img src="resources/images/dell.svg">
 
                             <span>
                                 Dell
@@ -140,7 +140,7 @@
                         </a>
 
                         <a href="https://www.apple.com" class="partner">
-                            <img src="/resources/images/apple.svg">
+                            <img src="resources/images/apple.svg">
 
                             <span>
                                 Apple
@@ -148,7 +148,7 @@
                         </a>
 
                         <a href="https://www.hp.com" class="partner">
-                            <img src="/resources/images/hp.svg">
+                            <img src="resources/images/hp.svg">
 
                             <span>
                                 HP
@@ -156,7 +156,7 @@
                         </a>
 
                         <a href="https://www.dell.com" class="partner">
-                            <img src="/resources/images/dell.svg">
+                            <img src="resources/images/dell.svg">
 
                             <span>
                                 Dell
@@ -164,7 +164,7 @@
                         </a>
 
                         <a href="https://www.apple.com" class="partner">
-                            <img src="/resources/images/apple.svg">
+                            <img src="resources/images/apple.svg">
 
                             <span>
                                 Apple
@@ -173,7 +173,7 @@
                     </div>
                 </div>
 
-                <div id="content-products" class="d-flex-column gap-1 padding-1">
+                <div id="content-products" class="d-flex-column gap-1 padding-1 section">
                     <h1>
                         Продукция
                     </h1>
@@ -201,292 +201,294 @@
                                 </button>
                         </div>
 
-                        <div class="d-flex gap-1 padding-05 overflow-x-hidden" id="products">
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
+                        <div class="d-flex gap-1 padding-05">
+                            <a class="btn width-2 height-10 padding-0 flex-shrink-0 justify-content-center margin-auto" id="products-left">
+                                <span class="material-symbols-outlined">
+                                    chevron_left
                                 </span>
+                            </a>
 
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
+                            <div class="d-flex gap-1 overflow-x-hidden" id="products">
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
                                     </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
                                 </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
+    
+                                <div class="product">
+                                    <span>
+                                        ЕС Ароматик СУ
+                                    </span>
+    
+                                    <div class="position-relative margin-b-1">
+                                        <div class="d-flex position-absolute top-05 left-05 gap-05">
+                                            <span class="bg-yellow rounded padding-x-05">
+                                                Подсолнечник
+                                            </span>
+                                        </div>
+    
+                                        <img src="resources/images/product.png" class="width-15 height-15 rounded">
+    
+                                        <button class="btn">
+                                            <span class="material-symbols-outlined">
+                                                shopping_cart
+                                            </span>
+    
+                                            <span>
+                                                В корзину
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <span class="text-align-justify">
+                                        Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
+                                    </span>
+                                </div>
                             </div>
 
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
+                            <button class="btn width-2 height-10 padding-0 flex-shrink-0 justify-content-center margin-auto" id="products-right">
+                                <span class="material-symbols-outlined">
+                                    chevron_right
                                 </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
-
-                            <div class="product">
-                                <span>
-                                    ЕС Ароматик СУ
-                                </span>
-
-                                <div class="position-relative margin-b-1">
-                                    <div class="d-flex position-absolute top-05 left-05 gap-05">
-                                        <span class="bg-yellow rounded padding-x-05">
-                                            Подсолнечник
-                                        </span>
-                                    </div>
-
-                                    <img src="/resources/images/product.png" class="width-15 height-15 rounded">
-
-                                    <button class="btn">
-                                        <span class="material-symbols-outlined">
-                                            shopping_cart
-                                        </span>
-
-                                        <span>
-                                            В корзину
-                                        </span>
-                                    </button>
-                                </div>
-                                
-                                <span class="text-align-justify">
-                                    Гибрид умеренно-интенсивного типа для технологии SULFO*** Устойчив к гербицидам группы трибенурон- метил зарегистрированным на подсолнечнике. Пригоден для No till.
-                                </span>
-                            </div>
+                            </button>
                         </div>
 
                         <div class="padding-05">
                             <div class="d-flex gap-05 margin-l-auto width-fit">
-                                <button class="btn" id="products-left">
-                                    <span class="material-symbols-outlined">
-                                        chevron_left
-                                    </span>
-                                </button>
-
-                                <button class="btn" id="products-right">
-                                    <span class="material-symbols-outlined">
-                                        chevron_right
-                                    </span>
-                                </button>
-
                                 <button class="btn">
                                     Показать всё
                                 </button>
@@ -495,7 +497,7 @@
                     </div>
                 </div>
 
-                <div id="content-contact" class="d-flex-column gap-1 padding-1">
+                <div id="content-contact" class="d-flex-column gap-1 padding-1 section">
                     <h1>
                         Остались вопросы?
                     </h1>
@@ -515,7 +517,7 @@
                                     Как к вам обращаться?
                                 </label>
 
-                                <input type="text" placeholder="Имя"/>
+                                <input type="text" placeholder="Имя">
                             </div>
 
                             <div class="textbox">
@@ -523,7 +525,7 @@
                                     Как с вами связаться?
                                 </label>
 
-                                <input type="text" placeholder="Номер телефона, email"/>
+                                <input type="text" placeholder="Номер телефона, email">
                             </div>
 
                             <div class="textbox">
@@ -547,7 +549,7 @@
                     </div>
                 </div>
 
-                <div id="content-about" class="d-flex-column gap-1 padding-1">
+                <div id="content-about" class="d-flex-column gap-1 padding-1 section">
                     <h1>
                         О нас
                     </h1>
@@ -567,21 +569,21 @@
                         </div>
 
                         <div class="d-flex-column gap-1">
-                            <img class="image shadowed" src="/resources/images/kamyshyn.png" alt="photo">
+                            <img class="image shadowed" src="resources/images/kamyshyn.png" alt="photo">
 
-                            <img class="map shadowed" src="/resources/images/map.png" alt="map">
+                            <img class="map shadowed" src="resources/images/map.png" alt="map">
                         </div>
                     </div>
                 </div>
 
-                <div id="content-peoples" class="d-flex-column gap-1 padding-1">
+                <div id="content-peoples" class="d-flex-column gap-1 padding-1 section">
                     <h1>
                         Представители
                     </h1>
 
                     <div class="d-flex justify-content-center gap-1">
                         <div class="people">
-                            <img src="/resources/images/avatar.jpeg" alt="people"/>
+                            <img src="resources/images/avatar.jpeg" alt="people">
 
                             <span>
                                 А. С. Пушкин
@@ -613,7 +615,7 @@
                         </div>
 
                         <div class="people">
-                            <img src="/resources/images/avatar.jpeg" alt="people"/>
+                            <img src="resources/images/avatar.jpeg" alt="people">
 
                             <span>
                                 М. Ю. Лермонтов
@@ -645,7 +647,7 @@
                         </div>
 
                         <div class="people">
-                            <img src="/resources/images/avatar.jpeg" alt="people"/>
+                            <img src="resources/images/avatar.jpeg" alt="people">
 
                             <span>
                                 М. Фаулер
