@@ -182,3 +182,19 @@ a {
 .margin-auto {
     margin: auto;
 }
+
+.width-30 {
+    width: 30em;
+}
+
+.height-30 {
+    height: 30em;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.gap-2 {
+    gap: 2em;
+}
