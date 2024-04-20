@@ -186,7 +186,6 @@ textarea {
     display: flex;
     flex-direction: column;
     width: calc(100% - 12em);
-    height: 8em;
     z-index: 15;
     left: 4em;
     bottom: 1em;
@@ -374,4 +373,132 @@ textarea {
 /* Product page */
 .product-info {
     background-color: rgb(240, 240, 240);
+}
+
+
+
+/* Adaptive */
+@media (orientation: portrait) {
+    * {
+        font-size: 20px;
+    }
+    
+    .header, .body, .footer {
+        padding: 0 1em !important;
+    }
+
+    .btn {
+        font-size: 1.5em !important;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.5em !important;
+    }
+
+    .header {
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .header .btn {
+        flex-shrink: 0;
+    }
+
+    .header .btn:has(.material-symbols-outlined) {
+        padding: 1em 1em !important;
+    }
+
+    .header .btn:has(.material-symbols-outlined) span:not(.material-symbols-outlined) {
+        display: none;
+    }
+
+    .carousel-container,
+    .products-carousel {
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel-content {
+        width: 100%;
+        scroll-snap-align: center;
+    }
+
+    .products-carousel .product {
+        scroll-snap-align: start;
+    }
+
+    .carousel-content img.image {
+        margin: 1em;
+        width: calc(100% - 2em);
+    }
+
+    .carousel-content > .text {
+        width: calc(100% - 6em);
+        left: 1em;
+    }
+
+    .left,
+    .right,
+    .next,
+    .prev {
+        display: none;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .show-all {
+        margin: 0 auto;
+    }
+
+    #content-contact .width-half {
+        width: calc(100% - 32px);
+    }
+
+    .product {
+        width: 20em;
+        flex-shrink: 0;
+    }
+
+    .product img {
+        width: 20em;
+        height: 20em;
+    }
+
+    .product .btn {
+        left: 2.3em;
+        bottom: -1em;
+    }
+
+    .product span {
+        font-size: 24px;
+    }
+
+    /* Cart */
+    .cart {
+        flex-direction: column-reverse !important;
+    }
+    
+    .cart .summary {
+        width: calc(100% - 36px);
+        align-self: center;
+    }
+
+    .cart .list {
+        justify-content: center;
+    }
+
+    .cart .product {
+        width: 16em;
+    }
+
+    .cart .product img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .cart .product .btn {
+        left: 3em;
+    }
 }
